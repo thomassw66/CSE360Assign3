@@ -82,6 +82,11 @@ public class CalculatorTest {
 
 	@Test
 	public void testGetHistory () {
-		fail("Not yet implemented");
+		Calculator myCalculator = new Calculator();
+		myCalculator.add (4); 
+		myCalculator.subtract (2); 
+		myCalculator.multiply (2); 
+		myCalculator.add(5);
+		assertEquals(myCalculator.getHistory(), "0 + 4 - 2 * 2 + 5");
 	}
 }
